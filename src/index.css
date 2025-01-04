@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+:root {
+  --primary-color: hsl(217, 19%, 35%);
+  --color-card-bg: hsl(210, 46%, 95%);
+  --share-btn-color: hsl(214, 17%, 51%);
+  --color-text: hsl(212, 23%, 69%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Manrope", serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.3rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(212deg 23% 69% / 41%);
+  color: var(--color-text);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.app {
+  /* max-width: 60rem; */
+  max-width: 80rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: start;
+  /* gap: 3rem; */
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+/* LEFT-PART */
+.leftImg {
+  flex: 0.9;
+  align-self: stretch;
+  width: 100%;
+  background-image: url(../images/drawers.jpg);
+  background-size: cover;
+  background-position: left;
+}
+
+.content {
+  flex: 1.1;
+  padding: 4rem;
+}
+
+.details h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+.details p {
+  text-align: justify;
+  margin-bottom: 2.5rem;
+}
+
+.profile {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.profile img {
+  border-radius: 5rem;
+  height: 5rem;
+}
+
+.data h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.btn {
+  margin-left: auto;
+  border: none;
+  background-color: hsl(212deg 23% 69% / 29%);
+  border-radius: 50rem;
+  width: 4rem;
+  height: 4rem;
+}
+.btn img {
+  height: 40%;
+}
+
+/* AUTHOR */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--primary-color);
+}
+
+/* //////////////////////////////////////////////////// */
+/* MEDIA-QUERIES */
+/* //////////////////////////////////////////////// */
+
+/* 68.75em = 1100px */
+@media only screen and (max-width: 68.75em) {
+  html {
+    font-size: 50%;
+  }
+}
+/* 56.25em = 900px */
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+/* 50em = 800px */
+@media only screen and (max-width: 50em) {
+  html {
+    font-size: 37.5%;
+  }
+  #root {
+    margin: 4rem 2rem;
+  }
+}
+/* 31.25 = 500px */
+@media only screen and (max-width: 31.25em) {
+}
