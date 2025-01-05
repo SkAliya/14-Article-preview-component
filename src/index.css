@@ -137,4 +137,12 @@ body {
 }
 /* 31.25 = 500px */
 @media only screen and (max-width: 31.25em) {
+  .app {
+    flex-direction: column;
+  }
+  .leftImg {
+    flex: none;
+    height: 30rem;
+    background-position: center;
+  }
 }
