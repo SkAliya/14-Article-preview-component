@@ -41,15 +41,16 @@ body {
   align-items: start;
   /* gap: 3rem; */
   background-color: #fff;
-  overflow: hidden;
   margin-bottom: 2rem;
+  overflow: hidden;
 }
 
 /* LEFT-PART */
 .leftImg {
   flex: 0.9;
-  align-self: stretch;
   width: 100%;
+  align-self: stretch;
+
   background-image: url(../images/drawers.jpg);
   background-size: cover;
   background-position: left;
@@ -90,6 +91,7 @@ body {
 }
 
 .btn {
+  position: relative;
   margin-left: auto;
   border: none;
   background-color: hsl(212deg 23% 69% / 29%);
@@ -100,7 +102,29 @@ body {
 .btn img {
   height: 40%;
 }
-
+.list {
+  position: absolute;
+  top: -170%;
+  left: -300%;
+  z-index: 10;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  background-color: var(--primary-color);
+}
+.list li {
+}
+.list li img {
+  height: 1.8rem;
+}
+.list li:first-child {
+  color: var(--color-text);
+  /* font-size: 1.rem; */
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
 /* AUTHOR */
 .attribution {
   font-size: 11px;
