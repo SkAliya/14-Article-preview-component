@@ -34,23 +34,33 @@ body {
 }
 
 .app {
-  /* max-width: 60rem; */
   max-width: 80rem;
   border-radius: 1rem;
   display: flex;
   align-items: start;
-  /* gap: 3rem; */
   background-color: #fff;
   margin-bottom: 2rem;
   overflow: hidden;
+  box-shadow: 0 0.1rem 1.8rem 0.6rem hsl(214deg 17% 51% / 25%);
+}
+#root {
+  position: relative;
 }
 
+.arrow {
+  position: absolute;
+  top: 75%;
+  left: 44%;
+  width: 2rem;
+  height: 2rem;
+  transform: rotate(45deg);
+  background-color: var(--primary-color);
+}
 /* LEFT-PART */
 .leftImg {
   flex: 0.9;
   width: 100%;
   align-self: stretch;
-
   background-image: url(../images/drawers.jpg);
   background-size: cover;
   background-position: left;
@@ -91,37 +101,47 @@ body {
 }
 
 .btn {
-  position: relative;
   margin-left: auto;
   border: none;
-  background-color: hsl(212deg 23% 69% / 29%);
+  background-color: hsl(212deg 23% 69% / 22%);
   border-radius: 50rem;
   width: 4rem;
   height: 4rem;
+  cursor: pointer;
 }
-.btn img {
-  height: 40%;
+
+.btn svg {
+  width: 4.5rem;
+  height: 4.5rem;
 }
-.list {
+.btn.showpop {
+  background-color: var(--share-btn-color);
+}
+.btn.showpop .iconShare {
+  fill: #fff;
+}
+
+.list.showpop {
   position: absolute;
-  top: -170%;
-  left: -300%;
-  z-index: 10;
+  top: 50%;
+  left: 80%;
   list-style: none;
   display: flex;
   gap: 1.5rem;
   padding: 1rem 2rem;
   border-radius: 0.8rem;
   background-color: var(--primary-color);
+  box-shadow: 0 0.1rem 1.8rem 0.6rem hsla(214, 17%, 51%, 0.429);
 }
-.list li {
+.list {
+  display: none;
 }
+
 .list li img {
   height: 1.8rem;
 }
 .list li:first-child {
   color: var(--color-text);
-  /* font-size: 1.rem; */
   letter-spacing: 0.5rem;
   text-transform: uppercase;
 }
@@ -168,5 +188,37 @@ body {
     flex: none;
     height: 30rem;
     background-position: center;
+  }
+  .arrow {
+    display: none;
+  }
+  .btn {
+    position: relative;
+    z-index: 20;
+  }
+  .content {
+    padding: 3rem;
+  }
+  .content.showpop {
+    padding: 4rem 4rem 0 4rem;
+  }
+  .list.showpop {
+    left: 0;
+    top: 87%;
+    width: 100%;
+    border-radius: 0;
+    gap: 3rem;
+    padding: 2rem 3rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+  .list li img {
+    height: 2.5rem;
+  }
+  .list li:first-child {
+    color: var(--color-text);
+    font-size: 1.8rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
   }
 }

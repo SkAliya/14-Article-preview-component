@@ -1,12 +1,11 @@
 import Details from "./Details";
 import Profile from "./Profile";
-import styles from "./Content.module.css";
 
-function Content() {
+function Content({ setIsShow, isShow }) {
   return (
-    <div className="content">
+    <div className={`content ${isShow ? "showpop" : ""}`}>
       <Details />
-      <Profile />
+      <Profile setIsShow={setIsShow} isShow={isShow} />
     </div>
   );
 }

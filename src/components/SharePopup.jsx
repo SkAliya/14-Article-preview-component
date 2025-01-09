@@ -1,9 +1,9 @@
 import fb from "./icon-facebook.svg";
 import twit from "./icon-twitter.svg";
 import pint from "./icon-pinterest.svg";
-function SharePopup() {
+function SharePopup({ isShow }) {
   return (
-    <ul className="list">
+    <ul className={`list ${isShow ? "showpop" : ""}`}>
       <li>share</li>
       <li>
         <img src={fb} alt="facebook icon" />
@@ -14,6 +14,7 @@ function SharePopup() {
       <li>
         <img src={pint} alt="pintrest icon" />
       </li>
+      <div className="arrow"></div>
     </ul>
   );
 }
