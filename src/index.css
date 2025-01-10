@@ -123,7 +123,7 @@ body {
 
 .list.showpop {
   position: absolute;
-  top: 50%;
+  top: 47%;
   left: 80%;
   list-style: none;
   display: flex;
@@ -172,13 +172,23 @@ body {
 }
 /* 50em = 800px */
 @media only screen and (max-width: 50em) {
-  html {
-    font-size: 37.5%;
-  }
   #root {
     margin: 4rem 2rem;
   }
 }
+/* 37.5em = 600px */
+@media only screen and (max-width: 37.5em) {
+  .list.showpop {
+    top: 50%;
+    left: 68%;
+  }
+  .arrow {
+    position: absolute;
+    top: 75%;
+    left: 76%;
+  }
+}
+
 /* 31.25 = 500px */
 @media only screen and (max-width: 31.25em) {
   .app {
@@ -204,13 +214,15 @@ body {
   }
   .list.showpop {
     left: 0;
-    top: 87%;
+    top: 82%;
     width: 100%;
     border-radius: 0;
     gap: 3rem;
     padding: 2rem 3rem;
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
+    margin-top: 1rem;
+    box-shadow: none;
   }
   .list li img {
     height: 2.5rem;
@@ -220,5 +232,12 @@ body {
     font-size: 1.8rem;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
+  }
+}
+
+/* 25em = 400px */
+@media only screen and (max-width: 25em) {
+  .profile {
+    align-items: start;
   }
 }
