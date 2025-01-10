@@ -28,7 +28,7 @@ This is a solution to the [Article-preview-component-challenge on Frontend Mento
 
 <h2 align="center">Links</h2>
 
-- Solution URL: [Article-preview-component-solution | Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-stats-card---using-react-DczY8RHAth)
+- Solution URL: [Article-preview-component-solution | Frontend Mentor](https://www.frontendmentor.io/solutions/nice-article-card---built-with-react-JCNqb1ukQn)
 - Live Site URL: [https://skaliya.github.io/14-Article-preview-component/](https://skaliya.github.io/14-Article-preview-component/)
 
 <br>
